@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionar Funcionario</title>
+    <link 
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" 
+    rel="stylesheet" 
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" 
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="./src/css/index.css">
+    <link rel="stylesheet" href="./src/css/Header/headerStyle.css">
+    <link rel="stylesheet" href="./src/css/Footer/footerStyles.css">
+    <link rel="stylesheet" href="./src/css/Login/loginBody-styles.css">
+</head>
+<body>
+
+    <header class="container">
+        <img id="IconeHeader" src="./imgs/IconeHeader.png" alt="Imagem com as logos do Armazém da Criatividade">
+        <div id="ToolBarContainer">
+            <button id="AddSupplierButton">Adicionar Fornecedor</button>
+            <button id="EditSupplierButton">Editar fonecedor</button>
+        </div>
+    </header>
+    <div class="container-login">
+        <h1 id="title-login">Login</h1> 
+        <form class="login-form">
+            <div class="form-group" id="loginForm">
+                <label for="username">Usuário:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Senha:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit" class="login-button">Entrar</button>
+        </form>
+    </div>
+    <footer>
+        <div id="FooterContent" class="container">
+            <a href="https://armazemdacriatividade.org/"><img id="LogoAC" src="../../imgs/Logo AC.png" alt="Logo do Armazém da Criatividade"></a>
+            <div id="Contacts">
+                <p id="ContactTitle">Contatos</p>
+                <div id="CelphoneField">
+                    <img id="TelefoneIcon" src="../../imgs/TelefoneIcon.svg" alt="Logo do Armazém da Criatividade">
+                    <p id="PhoneNumber">+55 81 98962-5187</p>
+                </div>
+                <div id="EmailField">
+                    <img id="EmailIcon" src="../../imgs/EmailIcon.svg" alt="Logo do Armazém da Criatividade">
+                    <a href="mailto:contatocaruaru@portodigital.org"><p id="Email">contatocaruaru@portodigital.org</p></a>
+                </div>
+            </div>
+            <div id="SocialMediaIcons">
+                <a href="https://www.youtube.com/channel/UCK3gBOf2cCgOGeDh-VDuONA">
+                    <img id="YoutubeIcon" src="../../imgs/YoutubeIcon.svg" alt="Imagem com as logos do Armazém da Criatividade">
+                </a>
+                <a href="https://www.facebook.com/armazemdacriatividade">
+                    <img id="FacebookIcon" src="../../imgs/FacebookIcon.svg" alt="Imagem com as logos do Armazém da Criatividade">
+                </a>
+                <a href="https://www.instagram.com/armazemdacriatividade/">
+                    <img id="InstagramIcon" src="../../imgs/InstagramIcon.svg" alt="Imagem com as logos do Armazém da Criatividade">
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="./src/js/functions/genericFunctions/autenticate.js"></script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link 
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" 
+    rel="stylesheet" 
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" 
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/Header/headerStyle.css">
+    <link rel="stylesheet" href="./css/Footer/footerStyles.css">
+    <link rel="stylesheet" href="./css/SearchField/searchFieldStyle.css">
+    <link rel="stylesheet" href="./css/SupplierField/supplierFieldStyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <title>Apoio Fornecedores AC</title>
+</head>
+<body>
+<header class="container">
+        <img id="IconeHeader" src="../imgs/IconeHeader.png" alt="Imagem com as logos do Armazém da Criatividade">
+    </header>
+    <div id="main">
+        <h1 id="title" class="container">Apoio de Fornecedores do Armazém da Criatividade Caruaru</h1>
+    </div>
+    <div id="Result" class="container">
+        <h4 id="ResultTitle">
+            <div><span>LISTA DE FORNECEDORES <span id="listInfoIndex">- Todos</span></span></div>
+            <div><input type="checkbox" checked id="completeSuppliers"><span id="completeSuppliersInfo">Exibir apenas fornecedores que possuem CNPJ</span></div>
+        </h4>
+        <div id="ResultContainer">
+            <div>
+                <div id="GeneralSeachField" class="container">
+                    <div id="PrevSeachField" >
+                        <button class="ButtonType clicked">Todos</button>
+                        <button class="ButtonType">Aquisição</button>
+                        <button class="ButtonType">Serviços</button>
+                        <button class="ButtonType">Mentores</button>
+                    </div>
+                    <div id="SearchField">
+                        <form>
+                            <input type="search" name="search" id="Search" placeholder="Buscar fornecedores">
+                            <button id="SubmitButton" type="button">
+                                <img id="SearchIcon" src="../imgs/SearchIcon.svg" alt="Icone de busca">
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                <div id="TitlesField">
+                    <p class="titlesCustom">DESCRIÇÃO</p>
+                    <p class="titlesCustom">NOME</p>
+                    <p class="titlesCustom">CNPJ</p>
+                    <link rel="stylesheet" href="https://docs.google.com/forms/d/e/1FAIpQLSfULd7uNPxobbGyaxS2BiFIyLKD5w6htCIStH0m3D5uwquN1w/viewform?usp=sf_link"><i class="fas fa-user-plus" id="addSupplier"></i>
+                </div>
+                <aside id='Panel'></aside>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div id="FooterContent" class="container">
+            <a href="https://armazemdacriatividade.org/"><img id="LogoAC" src="../imgs/Logo AC.png" alt="Logo do Armazém da Criatividade"></a>
+            <div id="Contacts">
+                <p id="ContactTitle">Contatos</p>
+                <div id="CelphoneField">
+                    <img id="TelefoneIcon" src="../imgs/TelefoneIcon.svg" alt="Logo do Armazém da Criatividade">
+                    <p id="PhoneNumber">+55 81 98962-5187</p>
+                </div>
+                <div id="EmailField">
+                    <img id="EmailIcon" src="../imgs/EmailIcon.svg" alt="Logo do Armazém da Criatividade">
+                    <a href="mailto:contatocaruaru@portodigital.org"><p id="Email">contatocaruaru@portodigital.org</p></a>
+                </div>
+            </div>
+            <div id="SocialMediaIcons">
+                <a href="https://www.youtube.com/channel/UCK3gBOf2cCgOGeDh-VDuONA">
+                    <img id="YoutubeIcon" src="../imgs/YoutubeIcon.svg" alt="Imagem com as logos do Armazém da Criatividade">
+                </a>
+                <a href="https://www.facebook.com/armazemdacriatividade">
+                    <img id="FacebookIcon" src="../imgs/FacebookIcon.svg" alt="Imagem com as logos do Armazém da Criatividade">
+                </a>
+                <a href="https://www.instagram.com/armazemdacriatividade/">
+                    <img id="InstagramIcon" src="../imgs/InstagramIcon.svg" alt="Imagem com as logos do Armazém da Criatividade">
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="./js/main.js" type="module"></script>
+</body>
+</html>

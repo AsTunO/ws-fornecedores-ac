@@ -1,0 +1,169 @@
+#ResultTitle {
+    padding-top: 50px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+}
+
+#completeSuppliersInfo {
+    font-weight:lighter;
+    font-size: 10px;
+    padding-left: 5px;
+}
+
+#ResultContainer {
+    
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    background-color: #e4d9d9;
+    box-shadow: #030303;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    padding-bottom: 10px;
+
+}
+
+.EmptyMessageF {
+    background-color: #e4d9d9;
+}
+.EmptyMessageP {
+    text-align: center;
+    font-weight: bolder;
+    padding-top: 170px;
+    font-size: 20px;
+}
+
+#Result {
+    padding-bottom: 50px;
+}
+
+.serviceType, .cnpj, .name,.titlesCustom {
+    width: 220px;
+    overflow-wrap: break-word;
+    hyphens: auto;
+}
+
+.titlesCustom {
+    font-weight: bold;
+    color: #4242F1;
+}
+
+#TitlesField{
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: bold;
+    width: 900px;
+}
+
+aside {
+    height: 400px;
+    width: 1000px;
+    overflow: hidden;
+    overflow-y: scroll;
+    
+}
+
+aside::-webkit-scrollbar {
+    width: 30px; 
+    background-color: #e4d9d9;
+    
+}
+
+aside::-webkit-scrollbar-thumb {
+    background-color: #4242F1; 
+}
+
+aside::-webkit-scrollbar-track { 
+    background-color: #e4d9d9;  
+    border: 1px solid #4242F1;
+}
+
+.supplierField {
+    background-color: #ae7aee;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    font-weight: 500;
+    font-size: small;
+    width: 900px;
+    margin-bottom: 20px;
+}
+
+/* Estilos existentes para whitePanel */
+.white-panel {
+    /* ... */
+    position: absolute;
+    width: 380px;
+    height: auto;
+    /* ... */
+}
+
+.arrow-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ae7aee;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+}
+
+.arrow-button::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    width: 10px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: translate(-50%, -50%) rotate(-50deg);
+    transition: transform 0.1s ease;
+}
+
+.arrow-button:hover::before {
+    transform: translate(-50%, -50%) rotate(50deg);
+}
+
+.arrow-button:active::before {
+    transform: translate(-50%, -50%) rotate(50deg);
+}
+
+.details-panel {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 900px;
+    padding-left: 15px;
+    padding-bottom: 10px;
+}
+
+.detail-wrapper {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px; /* Espaçamento entre os detalhes */
+}
+
+.field,
+.value {
+    margin: 0; /* Remover margens padrão */
+    font-size: 14px; /* Tamanho da fonte */
+    line-height: 1.2; /* Espaçamento entre linhas */
+}
+
+.field {
+    flex-basis: 40%; /* Largura para o nome do campo */
+    font-weight: bold; /* Texto em negrito para o nome do campo */
+    color: #db512a;
+}
+
+.value {
+    flex-basis: 60%; /* Largura para o valor do campo */
+}

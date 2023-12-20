@@ -1,0 +1,11 @@
+header {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    padding-top: 20px;
+}
+
+#IconeHeader {
+    max-width: 90%; /* Para manter proporcional ao tamanho da tela */
+    height: auto;
+}

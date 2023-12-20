@@ -1,0 +1,83 @@
+#GeneralSeachField {
+    display: flex;
+    justify-content: space-between;
+    background-color: #e4d9d9;
+    margin-top: 30px;
+    margin-bottom: 65px;
+    padding: 0;
+}
+
+#PrevSeachField {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 600px;
+}
+
+.ButtonType {
+    background-color: #C070FF ;
+    color:black;
+    font-weight: bold;
+    border: none;
+    width: 130px;
+    height: 65px;
+}
+
+.ButtonType:hover {
+    background-color: #A050FF;
+    color: white;
+}
+
+.ButtonType:active {
+    background-color: rgb(32, 48, 90); 
+}
+
+.clicked {
+    background-color: rgb(32, 48, 90); 
+    color: white;
+  }
+
+#SearchField {
+    background-color: #ddd6d6;
+    width: 400px;
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+    border: 2px solid #848485;
+    align-items: center;
+    border-radius: 5px;
+    margin-left: 20px;
+}
+
+
+
+#Search, #SubmitButton {
+    background-color: #ddd6d6;
+    border: none;
+    margin: 40px;
+}
+
+input[type="search"] {
+    appearance: none;
+    -webkit-appearance: none;
+    border: none;
+    outline: none;
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+    appearance: none;
+    -webkit-appearance: none;
+    display: none;
+    border: none;
+    outline: none;
+}
+
+#SearchIcon {
+    width: 24px;
+    height: auto;
+}
+
+#SearchIcon:hover {
+    filter: brightness(10%);
+}
+
